@@ -1,0 +1,101 @@
+[
+  {
+    "id": "golden-state-warriors",
+    "name": "Golden State Warriors",
+    "conference": "Western Conference",
+    "players": [
+      {
+        "id": "stephen-curry",
+        "name": "Stephen Curry",
+        "number": 30
+      },
+      {
+        "id": "klay-thompson",
+        "name": "Klay Thompson",
+        "number": 11
+      },
+      {
+        "id": "draymond-green",
+        "name": "Draymond Green",
+        "number": 23
+      },
+      {
+        "id": "andrew-wiggins",
+        "name": "Andrew Wiggins",
+        "number": 22
+      },
+      {
+        "id": "kelly-oubre-jr",
+        "name": "Kelly Oubre Jr.",
+        "number": 12
+      },
+      {
+        "id": "james-wiseman",
+        "name": "James Wiseman",
+        "number": 33
+      },
+      {
+        "id": "jordan-poole",
+        "name": "Jordan Poole",
+        "number": 3
+      },
+      {
+        "id": "damion-lee",
+        "name": "Damion Lee",
+        "number": 1
+      },
+      {
+        "id": "juan-toscano-anderson",
+        "name": "Juan Toscano-Anderson",
+        "number": 95
+      },
+      {
+        "id": "eric-paschall",
+        "name": "Eric Paschall",
+        "number": 7
+      },
+      {
+        "id": "kevon-looney",
+        "name": "Kevon Looney",
+        "number": 5
+      },
+      {
+        "id": "mychal-mulder",
+        "name": "Mychal Mulder",
+        "number": 15
+      },
+      {
+        "id": "justinian-jessup",
+        "name": "Justinian Jessup",
+        "number": 9
+      },
+      {
+        "id": "mike-muscala",
+        "name": "Mike Muscala",
+        "number": 31
+      },
+      {
+        "id": "gabriel-dec",
+        "name": "Gabriel Dec",
+        "number": 2
+      }
+    ]
+  },
+  {
+    "id": "boston-celtics",
+    "name": "Boston Celtics",
+    "conference": "Eastern Conference",
+    "players": [
+      {
+        "id": "jaylen-brown",
+        "name": "Jaylen Brown",
+        "number": 7
+      },
+      {
+        "id": "Jayson Tatum",
+        "name": "Jayson Tatum",
+        "number": 0
+      }
+    ]
+  }
+]

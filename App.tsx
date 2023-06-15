@@ -1,16 +1,20 @@
-import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native";
 import { StyleSheet, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { ScreenOne } from "./screens/ScreenOne";
-import { ScreenTwo } from "./screens/ScreenTwo";
+import { HomeScreen } from "./screens/HomeScreen";
+import { TeamScreen } from "./screens/TeamScreen";
+import { PlayerScreen } from "./screens/PlayerScreen";
 
-const Stack = createNativeStackNavigator();
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+export type StackParamList = {
+  Home: undefined;
+  Team: { id: string };
+  Player: { teamId: string; playerId: string };
+};
 
-const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator<StackParamList>();
 
 export default function App() {
   return (
@@ -18,16 +22,23 @@ export default function App() {
       <StatusBar style="light" />
       <SafeAreaView style={styles.safeAreaContainer}>
         <NavigationContainer>
-          <Tab.Navigator
-            sceneContainerStyle={{ backgroundColor: "#94a3b8" }}
+          <Stack.Navigator
             screenOptions={{
-              tabBarStyle: { backgroundColor: "#334155" },
-              tabBarLabelStyle: { color: "white" },
+              headerStyle: { backgroundColor: "#cbd5e1" },
+              headerTintColor: "white",
+              contentStyle: { backgroundColor: "#e2e8f0" },
             }}
           >
-            <Tab.Screen name="Screen One" component={ScreenOne} />
-            <Stack.Screen name="Screen Two" component={ScreenTwo} />
-          </Tab.Navigator>
+            <Stack.Screen
+              name="Home"
+              component={HomeScreen}
+              options={{
+                title: "HOME",
+              }}
+            />
+            <Stack.Screen name="Team" component={TeamScreen} />
+            <Stack.Screen name="Player" component={PlayerScreen} />
+          </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>
     </View>
